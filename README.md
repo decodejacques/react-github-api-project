@@ -73,11 +73,6 @@ If you click on followers, notice that the URL of the page changes to `/users/:u
 
 **The goal of this workshop** is to implement the three links above. To do this, we'll start by implementing the followers page together with step by step instructions. Then, your job will be to implement the two remaining screens and fix any bugs.
 
-## Implementing the Followers page
-When clicking on the followers link in the UI, notice that the URL changes to `/user/:username/followers`. Currently this results in a "not found" route. Let's fix this.
-
-![followers page](http://i.imgur.com/IwkBOUc.png)
-
 ### Step 0: Making things more dynamic
 
 In `App.jsx`, you have a line like this
@@ -95,6 +90,10 @@ handleInputChange = e => {}
 ```
 
 You'll need to change it so that the Link on that page points to the correct path.
+## Implementing the Followers page
+When clicking on the followers link in the UI, notice that the URL changes to `/user/:username/followers`. Currently this results in a "not found" route. Let's fix this.
+
+![followers page](http://i.imgur.com/IwkBOUc.png)
 
 ### Step 1: adding the route
 In `index.js`, you currently have your user route setup like this:
