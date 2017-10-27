@@ -78,6 +78,24 @@ When clicking on the followers link in the UI, notice that the URL changes to `/
 
 ![followers page](http://i.imgur.com/IwkBOUc.png)
 
+### Step 0: Making things more dynamic
+
+In `App.jsx`, you have a line like this
+
+```javascript
+return (<User username="decodejacques" />)
+```
+
+This means that the only user that will be displayed is decodejacques. You must change this.
+
+Also, in `Search.jsx`, you have a line like this
+
+```javascript
+handleInputChange = e => {}
+```
+
+You'll need to change it so that the Link on that page points to the correct path.
+
 ### Step 1: adding the route
 In `index.js`, you currently have your user route setup like this:
 
